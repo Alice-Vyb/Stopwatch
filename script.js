@@ -3,7 +3,7 @@
     stop = document.getElementById('stop'),
     reset = document.getElementById('reset'),
     lapsContainer = document.querySelector('.laps'),
-    seconds = 0, minutes = 0, hours = 0, laps = 0,
+    seconds = 0, minutes = 0, hours = 0,
     t;
 
 function add() {
@@ -42,14 +42,10 @@ reset.onclick = function() {
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
 }
-function timeRecorder() {
-    return (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s) + ":" + (ms < 10 ? "0" + ms : ms);
-}
-
 function laps() {
-    if(timer){
+    if(timer()){
         var li = document.createElement('li');
-        li.innerText = timeRecorder();
+        li.innerText = h1.textContent;
         lapsContainer.appendChild(li);
     }
 }
