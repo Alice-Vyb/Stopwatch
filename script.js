@@ -50,7 +50,7 @@ function laps() {
     if(timer){
         var li = document.createElement('li');
         li.innerText = timeRecorder();
-        lapHold.appendChild(li);
+        lap.appendChild(li);
     }
 }
 
