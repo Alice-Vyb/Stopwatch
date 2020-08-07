@@ -1,0 +1,53 @@
+*{
+    background-color: black;
+}
+
+body{
+    text-align: center;
+    text-decoration-color: aliceblue;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: aqua;
+}
+
+h1, time{
+    font-size: 70px;
+    font-family: monospace;
+    shape-inside: circle();
+    border-radius: 50%;
+    
+}
+h2{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: coral;
+    background-color: black;
+}
+.btn{
+    font-family: cursive;
+    font-weight: bold;
+    color: coral;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    border-color: aqua;
+    border-style: inset;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+hr{
+    border-radius: 50%;
+    width: 200px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    padding: 10px 0;
+}
