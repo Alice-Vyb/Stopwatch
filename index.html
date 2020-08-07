@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>A stopwatch</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <hr>
-        <h2>STOPWATCH</h2>
-        <hr>
-        <div>
-       <h1><time>00:00:00</time></h1>
-        <button class="btn" id="start">Start</button>
-        <button class="btn" id="stop">Stop</button>
-        <button class="btn" id="reset">Reset</button>
-        <button class="btn" id="laps">Lap</button>
-<ul class="laps"></ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch with Laps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <hr>
+    <h2>STOPWATCH</h2>
+    <hr>
+    <div id="display"><h1 class="display">00:00:00</h1>
+           <div class="btn"> <button onclick="start()" class="btn">Start</button>
+            <button onclick="pause()" class="btn">Pause</button>
+            <button onclick="reset()" class="btn">Reset</button>
+            <button onclick="laps()" class="btn">Lap</button>
+            <button onclick="resetlap()" class="btn">Reset Lap</button>
         </div>
-        
-        
-        <script src="script.js">
-            
-        </script>
-        
-    </body>
+        </div>
+       <div>
+        <ul class="lapholder"></ul>
+    </div>
     
+</body>
+<script type="text/javascript" src="script.js"></script>
 </html>
-  
-   
