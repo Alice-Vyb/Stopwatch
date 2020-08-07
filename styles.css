@@ -1,5 +1,6 @@
 *{
     background-color: black;
+    text-align: center;
 }
 
 body{
@@ -13,10 +14,9 @@ body{
     color: aqua;
 }
 
-h1, time{
+h1{
     font-size: 70px;
     font-family: monospace;
-    shape-inside: circle();
     border-radius: 50%;
     
 }
@@ -28,15 +28,13 @@ h2{
     background-color: black;
 }
 .btn{
+    padding: 20px;
+    text-align: center;
     font-family: monospace;
     font-weight: bold;
     color: coral;
-    padding: 5px;
-    margin: 10px;
-    width: 100px;
     border-color: aqua;
-    border-style: inset;
-    border-radius: 50%;
+    border-radius: 15px;
     text-transform: uppercase;
 }
 hr{
@@ -49,5 +47,9 @@ ul{
 }
 ul li{
     list-style: none;
-    padding: 10px 0;
+    
 }
+
+
+
+
