@@ -42,3 +42,15 @@ reset.onclick = function() {
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
 }
+function timeRecorder() {
+    return (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s) + ":" + (ms < 10 ? "0" + ms : ms);
+}
+
+function laps() {
+    if(timer){
+        var li = document.createElement('li');
+        li.innerText = timeRecorder();
+        lapHold.appendChild(li);
+    }
+}
+
