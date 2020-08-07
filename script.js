@@ -1,4 +1,4 @@
-ar h1 = document.getElementsByTagName('h1')[0],
+ var h1 = document.getElementsByTagName('h1')[0],
     start = document.getElementById('start'),
     stop = document.getElementById('stop'),
     reset = document.getElementById('reset'),
